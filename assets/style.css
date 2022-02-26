@@ -1,0 +1,33 @@
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2.5fr 1.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Global-Corona-Cases Global-Deaths Global-Recovered"
+      "Dropdown-Menu- Donut-Graph Last-30-Days-Cases"
+      ". . .";
+  }
+  
+  .Global-Corona-Cases { grid-area: Global-Corona-Cases; }
+  
+  .Global-Deaths { grid-area: Global-Deaths; }
+  
+  .Global-Recovered { grid-area: Global-Recovered; }
+  
+  .Last-30-Days-Cases {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      ". . .";
+    grid-area: Last-30-Days-Cases;
+  }
+  
+  .Dropdown-Menu- { grid-area: Dropdown-Menu-; }
+  
+  .Donut-Graph { grid-area: Donut-Graph; }
+  
