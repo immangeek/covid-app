@@ -1,7 +1,6 @@
 
 
 
-from http import server
 import pandas as pd
 url_confirmed = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/a7e2dbc442da45a142f2887478f9cf4fae1edd13/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv'
 url_deaths ='https://raw.githubusercontent.com/CSSEGISandData/COVID-19/a7e2dbc442da45a142f2887478f9cf4fae1edd13/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv'
@@ -56,7 +55,9 @@ from dash import Dash, Input, Output, html, dcc
 import dash_bootstrap_components as dbc
 from dash.dependencies import Input, Output
 import plotly.express as px
- 
+import gunicorn 
+
+
 #df = covid_data
 
     
